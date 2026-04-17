@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/uploads"
+publish_mode: editorial_workflow
+site_url: "https://cnedteamdev.github.io/site-secours"
+logo_url: "https://cnedteamdev.github.io/site-secours/assets/logo192.png"
+collections:
+  - name: "alertes"
+    label: "Alertes"
+    folder: "content/alertes"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Contenu de l’alerte", name: "body", widget: "markdown" }
