@@ -2,51 +2,15 @@
 layout: default
 title: "Accueil"
 ---
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cned</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
+{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+{% for post in sorted_posts %}
+<article class="alerte" style="margin-bottom:2em;">
     <header>
-        <h1>Cned</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="https://eformation.cned.fr/">Espace de formation</a></li>
-                <li><a href="https://www.cned.fr/sites/cned.fr/files/pdf/cgv/CNED_CGV-CGU_2026_V01_1-avril.pdf">Offre de
-                        formation</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <h2>{{ post.title }}</h2>
     </header>
-    <main>
-        {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-        {% for post in sorted_posts %}
-        <article class="alerte" style="margin-bottom:2em;">
-            <header>
-                <span class="alerte-icone">
-                    {% if post.title contains "météo" %}🌧️{% elsif post.title contains "Incendie" %}🔥{% elsif
-                    post.title
-                    contains "électricité" %}⚡{% else %}🚨{% endif %}
-                </span>
-                <h2>{{ post.title }}</h2>
-            </header>
-            <p class="alerte-date"><em>{{ post.date | date: '%d/%m/%Y %H:%M' }}</em></p>
-            <div class="alerte-contenu">
-                {{ post.content }}
-            </div>
-        </article>
-        {% endfor %}
-    </main>
-    <footer>
-        <p>&copy; 2026 Cned</p>
-    </footer>
-</body>
-
-</html>
+    <p class="alerte-date"><em>{{ post.date | date: '%d/%m/%Y %H:%M' }}</em></p>
+    <div class="alerte-contenu">
+        {{ post.content }}
+    </div>
+</article>
+{% endfor %}

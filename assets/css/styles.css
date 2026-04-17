@@ -13,7 +13,7 @@ header {
 }
 
 a {
-  color: #fff;
+  color: #171717;
   text-decoration: none;
 }
 
@@ -90,12 +90,6 @@ label {
 
 .alerte:hover {
   box-shadow: 0 4px 32px #f9e8c2;
-}
-
-.alerte-icone {
-  font-size: 2.3em;
-  vertical-align: bottom;
-  margin-right: 0.5em;
 }
 
 .alerte header {
