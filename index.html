@@ -6,14 +6,6 @@ title: "Accueil"
 {% for post in sorted_posts %}
 <article class="post-block type-{{ post.type | default: 'neutre' }}">
     <header>
-        <span class="post-icon">
-            {% case post.type %}
-            {% when "erreur" %}❌
-            {% when "warning" %}⚠️
-            {% when "info" %}ℹ️
-            {% else %}📝
-            {% endcase %}
-        </span>
         <h2>{{ post.title }}</h2>
     </header>
     <p class="post-date"><em>{{ post.date | date: '%d/%m/%Y %H:%M' }}</em></p>
