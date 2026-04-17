@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
+  repo: CnedTeamDev/site-secours
 media_folder: "assets/uploads"
 publish_mode: editorial_workflow
 site_url: "https://cnedteamdev.github.io/site-secours"
