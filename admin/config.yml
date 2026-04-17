@@ -2,10 +2,6 @@ backend:
   name: github
   branch: main
   repo: CnedTeamDev/site-secours
-  client_id: "Ov23lisFA9fLu3M0F2Nk"
-  scope: "repo"
-  base_url: "https://cnedteamdev.github.io/site-secours"
-  auth_endpoint: "auth"
 media_folder: "assets/uploads"
 publish_mode: editorial_workflow
 site_url: "https://cnedteamdev.github.io/site-secours"
