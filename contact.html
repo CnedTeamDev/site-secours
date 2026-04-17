@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css"> <!-- Assurez-vous d'avoir le même style que index.html -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Ajoutez d'autres liens selon index.html -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulaire de Contact</h1>
+        <form action="/submit_contact" method="POST" aria-labelledby="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Téléphone d'urgence :</label>
+            <input type="tel" id="phone" name="phone" pattern="^\d{10}$" required>
+
+            <label for="message">Votre message :</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <section>
+            <h2>Coordonnées d'urgence</h2>
+            <p>Email : urgence@example.com</p>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CNED. Mentions RGAA : Accessible à tous.</p>
+    </footer>
+</body>
+</html>
