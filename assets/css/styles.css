@@ -77,3 +77,61 @@ label {
     gap: 0.7em;
   }
 }
+
+.alerte {
+  background: #fff9ef;
+  border-left: 6px solid #f7b733;
+  border-radius: 8px;
+  box-shadow: 0 2px 18px #fde9c5;
+  margin-bottom: 2.6em;
+  padding: 1.3em 1.5em 1em 1.1em;
+  transition: box-shadow 0.22s;
+}
+
+.alerte:hover {
+  box-shadow: 0 4px 32px #f9e8c2;
+}
+
+.alerte-icone {
+  font-size: 2.3em;
+  vertical-align: bottom;
+  margin-right: 0.5em;
+}
+
+.alerte header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.alerte h2 {
+  margin: 0 0 0.2em 0;
+  color: #b76400;
+  font-size: 1.3em;
+}
+
+.alerte-date {
+  color: #747474;
+  font-size: 0.97em;
+  margin: 0 0 0.85em 2.7em;
+}
+
+.alerte-contenu {
+  margin-left: 2.7em;
+  font-size: 1.12em;
+}
+
+@media (max-width: 700px) {
+  .alerte {
+    padding: 0.7em 0.4em 0.9em 0.2em;
+  }
+
+  .alerte-contenu,
+  .alerte-date {
+    margin-left: 2.2em;
+  }
+
+  .alerte-icone {
+    font-size: 1.5em;
+  }
+}
