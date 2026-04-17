@@ -4,7 +4,7 @@ backend:
 media_folder: "assets/uploads"
 publish_mode: editorial_workflow
 site_url: "https://cnedteamdev.github.io/site-secours"
-logo_url: "https://cnedteamdev.github.io/site-secours/assets/logo192.png"
+logo_url: "https://cnedteamdev.github.io/site-secours/assets/logo-cned.png"
 collections:
   - name: "alertes"
     label: "Alertes"
