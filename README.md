@@ -1,27 +1,61 @@
-# Documentation du Site Secours CNED
+# Site de Secours — Cned
 
-## Architecture
-Décrivez ici l'architecture du projet, en précisant les différents composants et leur interaction.
+Bienvenue sur le dépôt de la page de secours du Cned.  
+Ce site statique permet d’informer parents, élèves et équipes en cas d’incident majeur sur les plateformes habituelles.
 
-## Utilisation Locale
-### Prérequis
-- Node.js et npm doivent être installés.
+## 📁 Structure principale
 
-### Installation
-1. Clonez le dépôt : `git clone https://github.com/CnedTeamDev/site-secours`
-2. Accédez au dossier du projet : `cd site-secours`
-3. Installez les dépendances : `npm install`
+- `_posts/` : tous les messages d’alerte, d’info ou de consignes (format `YYYY-MM-DD-titre.md`)
+- `_layouts/`, `assets/`, `index.html` : gabarits, images et page d’accueil.
 
-### Démarrage
-- Pour démarrer le projet en local, utilisez : `npm start`
+## ✍️ Ajouter une actualité (post)
 
-## Activation de GitHub Pages
-Pour activer GitHub Pages, allez dans les paramètres du dépôt et activez l'option GitHub Pages sous "Options". Sélectionnez la branche que vous souhaitez utiliser pour la publication.
+1. Créer un fichier dans `_posts/` au format :
 
-## Migration
-Décrivez ici les étapes nécessaires pour migrer le projet d'une version à une autre ou d'une infrastructure à une autre.
+   ```
+   YYYY-MM-DD-titre.md
+   ```
 
-## Conformité
-Expliquez les normes de conformité respectées par le projet, notamment en matière de sécurité, d'accessibilité et de meilleures pratiques de développement.
+   Exemple :
 
----
+   ```
+   _posts/2026-04-17-info-examens.md
+   ```
+
+2. Respecter la structure suivante :
+
+   ```markdown
+   ---
+   title: "Titre affiché"
+   date: YYYY-MM-DD HH:MM:SS +0200
+   type: erreur | info | warning | neutre
+   ---
+
+   Message rédigé en langage clair, sans jargon technique.
+   ```
+
+3. Les nouveautés s’affichent automatiquement sur la page d’accueil.
+
+## ⚠️ Important : gestion des dates
+
+- **N’utilisez jamais de date future** dans le nom ou l’en-tête d’un post si l’annonce concerne un incident immédiat.
+- Les fichiers datés dans le futur ne seront pas affichés tant que la date n’est pas atteinte.
+- Pour des annonces planifiées, pensez à bien vérifier la date/heure avant de publier.
+
+## ℹ️ Types de posts
+
+Utilisez la propriété `type` selon le contexte :
+
+- `erreur` — Anomalie, panne constatée
+- `info` — Retour à la normale, consigne générale
+- `warning` — Sécurité, vigilance, examens
+- `neutre` — Messages rassurants, fausse alerte
+
+## 🚀 Publication
+
+Toute modification dans `_posts/` apparaît sur le site après validation de la branche principale (main).  
+Les pages se mettent à jour automatiquement.
+
+## 👥 Pour aller plus loin
+
+- [Documentation Jekyll (FR)](https://jekyllrb.com/docs/)
