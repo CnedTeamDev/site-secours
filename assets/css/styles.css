@@ -1,13 +1,12 @@
 body {
+  color: #171717;
+  background: #fafcff;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
-  background: #fafcff;
-  color: #171717;
 }
 
-header,
-footer {
+header {
   background: #007F81;
   color: #fff;
   padding: 1em 2em;
@@ -24,11 +23,11 @@ a:focus {
 }
 
 nav ul {
+  display: flex;
+  gap: 1.5em;
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  gap: 1.5em;
 }
 
 nav ul li {
@@ -36,29 +35,29 @@ nav ul li {
 }
 
 main {
-  max-width: 920px;
-  margin: 2em auto;
-  padding: 2em;
   background: #fff;
   border-radius: 4px;
   box-shadow: 0 0 14px #e2eafc;
+  margin: 2em auto;
+  max-width: 920px;
+  padding: 2em;
 }
 
 input,
 textarea,
 button {
+  border: 1px solid #b9c4d2;
+  box-sizing: border-box;
+  border-radius: 3px;
   font: inherit;
   margin: 0.5em 0;
   padding: 0.6em 1em;
-  border: 1px solid #b9c4d2;
-  border-radius: 3px;
   width: 100%;
-  box-sizing: border-box;
 }
 
 label {
-  font-weight: bold;
   display: block;
+  font-weight: bold;
   margin-top: 1em;
 }
 
@@ -69,6 +68,7 @@ label {
 
   header,
   footer {
+    color: #171717;
     padding: 0.5em 1em;
   }
 
