@@ -1,8 +1,9 @@
 ---
 title: "Alerte TEST – Simulation annuelle de la bascule d’urgence"
-date: 2026-04-20 13:00:00 +0200
+date: 2026-04-04 13:00:00 +0200
 type: info
 ---
+
 🚨 **Ceci est un test** – Aucune action réelle n’est requise de votre part.
 
 Dans le cadre de notre démarche de sécurité, une simulation de bascule sur le site de secours est organisée ce jour **de 14h à 15h**.
