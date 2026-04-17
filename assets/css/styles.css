@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-header {
+body>header {
   background: #007F81;
   color: #fff;
   padding: 1em 2em;
@@ -32,6 +32,10 @@ nav ul {
 
 nav ul li {
   display: inline;
+}
+
+nav ul li a {
+  color: #fff;
 }
 
 main {
