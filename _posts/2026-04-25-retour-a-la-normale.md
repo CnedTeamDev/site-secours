@@ -1,8 +1,9 @@
 ---
 title: "Retour à la normale sur l'ensemble des services"
-date: 2026-04-17 14:00:00 +0200
+date: 2026-04-25 14:00:00 +0200
 type: info
 ---
+
 Nous confirmons le rétablissement complet de l’ensemble des plateformes (accès élèves, parents et enseignants).
 
 Vous pouvez reprendre l’utilisation normale de vos espaces et services.  
